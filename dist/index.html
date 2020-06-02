@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/b8beabee2e.js" crossorigin="anonymous"></script>
+  <title>To Do List</title>
+</head>
+<body>
+<head>
+  <!-- Navbar -->
+  <nav id="main-navbar">
+    <div class="logo">
+          <i class="fab fa-facebook-f fa-2x"></i>
+          <input type="search" name="search" id="search" placeholder="search"><i class="fas fa-search"></i>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="What we do">What We Do</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</head>
+<!-- Main Buttons - Handlers for all buttons -->
+<main id="main-section">
+  <!-- Display List -->
+  <button onclick="handlers.display()">Display To Do List</button>
+  <!-- Toggle All -->
+  <button onclick="handlers.toggle()">toggle All</button>
+  <!-- Add an Item and input field -->
+  <button onclick="handlers.addItem()">Add:</button>
+  <input type="text" name="text" id="text">
+<!-- Delete an item and input field -->
+  <button onclick="handlers.deleteToDo()">Delete To Do</button>
+  <input type="number" id="deleteToDo">
+</main>
+<!-- Three buttons instead of grid -->
+<div id="three-buttons">
+  <!-- Change an item and two input fields -->
+  <button id="changeItem" onclick="handlers.changeItem()">Change to do </button>
+  <input type="number" id="changePosition">
+  <input type="text" id="newValue">
+</div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
